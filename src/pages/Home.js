@@ -32,8 +32,7 @@ export function Home(){
             onChangeText={setNewSkill}
         />
 
-        <Button/>
-
+        <Button onPress={handleAddNewSkill} />
 
         <Text style={[styles.title, { marginVertical: 50}]}>
             My Skills    
@@ -41,7 +40,7 @@ export function Home(){
 
         {
             mySkills.map(skill => (
-                <SkillCard />
+                <SkillCard skill={skill}/>
             ))
         }
 
