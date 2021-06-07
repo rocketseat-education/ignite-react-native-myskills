@@ -5,7 +5,7 @@ import {
     StyleSheet,
     TextInput,
     Platform,
-    FlatList
+    FlatList,
 } from 'react-native';
 
 import { Button } from '../components/Button';
@@ -38,6 +38,8 @@ export function Home(){
 
   return (
       <View style={styles.container}>
+
+
         <Text style={styles.title}>
             Welcome, Rodrigo
         </Text>
